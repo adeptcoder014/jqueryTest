@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/CSS" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index1.js" type="text/javascript"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <p class="text">Enter you name</p>
+      <input type="text" class="input" />
+      <button id="btn" class="button">Send</button>
+      <ul>
+        <li id="my-list"></li>
+      </ul>
+    </div>
+
+    <div id="data">
+      <canvas id="chart"> </canvas>
+    </div> -->
+
+    <div class="container">
+      <!-- ===================================== -->
+      <div class="box">
+        <h1>Employee Master</h1>
+        <button class="button">Open</button>
+      </div>
+      <!-- ===================================== -->
+      <div class="box">
+        <h3 class="text">Employee Id :</h3>
+        <input class="input" id="postId"/>
+        <button 
+        style="background-color: gray;
+        color:white;
+        width:20%;
+        border-radius: 5px;
+        font-size: 18px;
+        height:35px;
+        align-self: center;
+        "
+        id="getId">Get</button>
+
+      </div>
+      <!-- ===================================== -->
+      <!-- ===================================== -->
+      <form id="myForm">
+      <div class="box">
+        <h3 class="text">Employee Type :</h3>
+        <select class="input" id="empType">
+          <option value="volvo">Choose options</option>
+          <option value="Type1">Type1</option>
+          <option value="Type2">Type2</option>
+          <option value="Type3">Type3</option>
+        </select>
+        
+      </div>
+      <!-- ===================================== -->
+      <!-- ===================================== -->
+      <div class="box">
+        <h3 class="text">Name :</h3>
+        <input class="input" id="name" />
+      </div>
+      <!-- ===================================== -->
+      <!-- ===================================== -->
+      <div class="box">
+        <h3 class="text">Mobile No :</h3>
+        <div style="display:flex;flex-direction: column;">
+          <input class="input" id="mobile" />
+          <p id="mobileError"
+          style="color:red"
+          >
+            Mobile should not be less than 10 digits
+          </p>
+        </div>
+      </div>
+      <!-- ===================================== -->
+      <div class="box">
+        <h3 class="text">DOB :</h3>
+        <input class="input" type="date" id="dob" />
+      </div>
+      <!-- ===================================== -->
+      <div class="box">
+        <h3 class="text">Gender :</h3>
+        <div style="align-items: center">
+          <label for="html">Male</label>
+          <input class="input" type="radio" value="male" id="gender"/>
+          <label for="html">Female</label>
+          <input class="input" type="radio" value="female" id="gender"/>
+        </div>
+      </div>
+
+      <!-- ===================================== -->
+      <div class="confirmingBox">
+        <!-- <input type="checkbox" id="inputField" style="display:none"> -->
+
+        <input class="inputInsta" type="checkbox" id="toggleInput" />
+        <h4 class="text" style="color: white">
+          do you have Instagram Account ?
+        </h4>
+      </div>
+      <!-- ===================================== -->
+      <div class="box insta" id="inputField">
+        <h3 class="text">Instagram Id :</h3>
+        <input class="input"  id="insta"/>
+      </div>
+      <!-- ===================================== -->
+      <div class="box">
+        <button class="button save">Save</button>
+        <button class="button danger">Reset</button>
+      </div>
+    </form>
+      <!-- ===================================== -->
+      <!-- ===================================== -->
+      <div class="table">
+        <h3 class="text" style="color:white">Employee Details :</h3>
+        
+        <input class='input' type="search" placeholder="Search ..."/>
+      </div>
+
+      <div>
+          <table id="myTable">
+            <thead>
+            <tr>
+              <th>ID</th>
+
+              <th>Name</th>
+              <th>Mobile</th>
+              <th>Gender</th>
+              <th>DOB</th>
+
+              <th>Insta Id</th>
+
+              <th>Action</th>
+
+              <th>Action</th>
+
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <!-- <tr>
+            <td>1</td>
+
+            <td>Nischal Gupta</td>
+            <td>7392988369</td>
+            <td>Male</td>
+            <td>14/07/1996</td>
+            <td>nischalAdept</td>
+            <td>Edit</td>
+            <td>Delete</td>
+
+          </tr> -->
+          
+      </div>
+    </div>
+  </body>
+</html>
