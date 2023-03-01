@@ -1,0 +1,80 @@
+body {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding: 15px;
+}
+.text {
+  color: black;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.input {
+  /* padding: 5px; */
+  border-radius: 5px;
+  border-width: 1px;
+  height: 26px;
+  background-color: whitesmoke;
+  align-self: center;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.button {
+  width: 25%;
+  /* padding: 5px; */
+  border-radius: 5px;
+  border-width: 0px;
+  margin-top: 5px;
+  height: 45px;
+  align-self: center;
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+}
+
+.confirmingBox {
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 5px;
+  width: 80%;
+  margin: auto;
+}
+.save {
+  background-color: lawngreen;
+}
+.danger {
+  background-color: red;
+}
+
+.hide {
+  display: none;
+}
+.table {
+  background-color: gray;
+  margin-top: 6px;
+  padding: 5px;
+}
+table {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  width: 100%;
+}
