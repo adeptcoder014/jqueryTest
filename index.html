@@ -12,18 +12,7 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <div class="container">
-      <p class="text">Enter you name</p>
-      <input type="text" class="input" />
-      <button id="btn" class="button">Send</button>
-      <ul>
-        <li id="my-list"></li>
-      </ul>
-    </div>
 
-    <div id="data">
-      <canvas id="chart"> </canvas>
-    </div> -->
 
     <div class="container">
       <!-- ===================================== -->
@@ -31,7 +20,7 @@
         <h1>Employee Master</h1>
         <button class="button">Open</button>
       </div>
-      <!-- ===================================== -->
+      <!-- ============ EMPLOYEE_ID ========================= -->
       <div class="box">
         <h3 class="text">Employee Id :</h3>
         <input class="input" id="postId"/>
@@ -47,8 +36,7 @@
         id="getId">Get</button>
 
       </div>
-      <!-- ===================================== -->
-      <!-- ===================================== -->
+      <!-- ============ EMPLOYEE_TYPE ========================= -->
       <form id="myForm">
       <div class="box">
         <h3 class="text">Employee Type :</h3>
@@ -60,14 +48,13 @@
         </select>
         
       </div>
-      <!-- ===================================== -->
-      <!-- ===================================== -->
+      <!-- ============ NAME ========================= -->
+      <!--  -->
       <div class="box">
         <h3 class="text">Name :</h3>
         <input class="input" id="name" />
       </div>
-      <!-- ===================================== -->
-      <!-- ===================================== -->
+      <!-- ============ MOBILE ========================= -->
       <div class="box">
         <h3 class="text">Mobile No :</h3>
         <div style="display:flex;flex-direction: column;">
@@ -75,58 +62,59 @@
           <p id="mobileError"
           style="color:red"
           >
-            Mobile should not be less than 10 digits
+            Mobile should not be less or more than 10 digits
           </p>
         </div>
       </div>
-      <!-- ===================================== -->
+      <!-- ============ DOB ========================= -->
       <div class="box">
         <h3 class="text">DOB :</h3>
         <input class="input" type="date" id="dob" />
       </div>
-      <!-- ===================================== -->
+      <!-- ============ GENDER ========================= -->
       <div class="box">
         <h3 class="text">Gender :</h3>
         <div style="align-items: center">
-          <label for="html">Male</label>
-          <input class="input" type="radio" value="male" id="gender"/>
-          <label for="html">Female</label>
-          <input class="input" type="radio" value="female" id="gender"/>
+          <label for="male">Male</label>
+          <input class="input" type="radio" value="male" id="maleRadio" name="gender"/>
+          <label for="female">Female</label>
+          <input class="input" type="radio" value="female" id="femaleRadio" name="gender"/>
         </div>
       </div>
+      
 
-      <!-- ===================================== -->
+      <!-- ============ INSTAGRAM_OPTION ========================= -->
       <div class="confirmingBox">
-        <!-- <input type="checkbox" id="inputField" style="display:none"> -->
 
-        <input class="inputInsta" type="checkbox" id="toggleInput" />
+        <input class="inputInsta" type="checkbox" id="toggleInput"/>
         <h4 class="text" style="color: white">
           do you have Instagram Account ?
         </h4>
       </div>
-      <!-- ===================================== -->
-      <div class="box insta" id="inputField">
+      <!-- ============ INSTAGRAM_OPTION ========================= -->
+      <div class="box insta" id="inputField" style="display:none">
         <h3 class="text">Instagram Id :</h3>
-        <input class="input"  id="insta"/>
+        <input class="input"  id="insta"  />
       </div>
-      <!-- ===================================== -->
+      <!-- ============ BUTTON ========================= -->
       <div class="box">
         <button class="button save">Save</button>
         <button class="button danger">Reset</button>
       </div>
     </form>
-      <!-- ===================================== -->
-      <!-- ===================================== -->
+      <!-- ============ TABLE ========================= -->
       <div class="table">
         <h3 class="text" style="color:white">Employee Details :</h3>
         
-        <input class='input' type="search" placeholder="Search ..."/>
+        <input class='input' type="search" placeholder="Search ..." id="searchInput"/>
       </div>
 
       <div>
           <table id="myTable">
             <thead>
             <tr>
+              <th>Type</th>
+
               <th>ID</th>
 
               <th>Name</th>
